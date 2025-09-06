@@ -1,17 +1,17 @@
 import React from 'react';
-// import eco
-import Signup from './Components/Sign/Signup.jsx'
-import Signin from './Components/Sign/Signin.jsx'
+import { Routes, Route, Link } from 'react-router-dom';
+import Login from './Components/Sign/login.jsx';
+import Dashboard from './Components/UserDashboard/Dashboard.jsx';
 
 function App() {
-
   return (
-      <div className='App'>
-          {/* <Eco /> */}
-          {/* <Signup /> */}
-          <Signin />
-      </div>
+    <div className='App'>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </div>
   )
 }
 
-export default App
+export default App;
