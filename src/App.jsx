@@ -1,14 +1,16 @@
 import React from 'react';
-import EcommercePlatform from './Components/Ecommerce';
+// import eco
+import Signup from './Components/Sign/Signup.jsx'
+import Signin from './Components/Sign/Signin.jsx'
 
 function App() {
 
   return (
-    <>
       <div className='App'>
-        <EcommercePlatform/>
+          {/* <Eco /> */}
+          {/* <Signup /> */}
+          <Signin />
       </div>
-    </>
   )
 }
 
